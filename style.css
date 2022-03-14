@@ -65,8 +65,8 @@ body {
 
   display: grid;
   
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr /1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   justify-items: center;
   align-items: center;
   grid-gap: 7px;
@@ -87,4 +87,43 @@ body {
   background: #cb92b1;
   border-radius: 30px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.exp ul {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  
+  list-style-position: outside;
+}
+
+.exp li {
+  list-style: none;
+}
+
+.exp #li {
+  margin-bottom: 1.25rem;
+}
+
+
+.ed ul {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  
+  list-style-position: outside;
+}
+
+.ed li {
+  list-style: none;
+}
+
+.ed #li {
+  margin-bottom: 1.25rem;
+}
+
+/*  Right side  */
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
