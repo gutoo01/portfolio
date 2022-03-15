@@ -50,26 +50,21 @@ body {
 }
 
 .bio li {
+  display: flex;
+  align-items: center;
+
   margin-bottom: 1.25rem;
-
-  flex-direction: row;
-  text-align: left;
+  gap: 1.25rem;
 }
-
-.bio img {
-  margin-right: 1.25rem;
-}
-
 
 .techs section {
-
   display: grid;
-  
+
   grid-template: 1fr 1fr 1fr /1fr 1fr 1fr;
   /* grid-template-columns: 1fr 1fr 1fr; */
   justify-items: center;
   align-items: center;
-  grid-gap: 7px;
+  gap: 7px;
 }
 
 .techs div {
@@ -92,7 +87,7 @@ body {
 .exp ul {
   margin-top: 1.25rem;
   margin-left: 1.25rem;
-  
+
   list-style-position: outside;
 }
 
@@ -104,11 +99,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
-
 .ed ul {
   margin-top: 1.25rem;
   margin-left: 1.25rem;
-  
+
   list-style-position: outside;
 }
 
@@ -126,4 +120,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-right: 0; /* 60px */
+  }
+}
+
+@media (max-width: 1227) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .techs section {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1188px) {
+  .bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
