@@ -45,7 +45,7 @@ body {
 
 .bio {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 1rem;
   list-style: none;
 }
 
@@ -288,6 +288,7 @@ body {
 
   .techs {
     text-align: center;
+    justify-content: center;
   }
 
   .exp {
@@ -325,11 +326,13 @@ body {
   }
 
   .bio li {
-    font-size: 1.0rem;
+    font-size: 1.0rem;    
+    flex-direction: column;
   }
 
   .techs section {
     grid-template: 1fr 1fr 1fr /1fr 1fr;
+    justify-content: center;
   }
 
   .exp {
