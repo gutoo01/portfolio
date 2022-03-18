@@ -37,7 +37,7 @@ body {
   width: 8rem;
   height: 8rem;
 
-  border: 2px solid #00ff00;
+  border: 2px solid #3b38f1;
   border-radius: 4rem;
 
   margin-bottom: 1.875rem;
@@ -121,6 +121,14 @@ body {
 
 /*  Right side  */
 
+a {
+  text-decoration: none;
+  color: #837e9f;
+}
+a:hover {
+  color: #ffffff;
+}
+
 .projects {
   display: flex;
   align-items: center;
@@ -146,6 +154,10 @@ body {
   margin-bottom: 5rem;
 }
 
+.repos span {
+  flex: none;
+}
+
 .repos #rating {
   width: 20%;
 }
@@ -166,7 +178,7 @@ body {
   width: 8rem;
   height: 8rem;
 
-  border: 2px solid #00ff00;
+  border: 2px solid #3b38f1;
   border-radius: 4rem;
 }
 
@@ -383,6 +395,10 @@ body {
   .ed ul {
     margin-top: 1.25rem;
     margin-left: 0;
+  }
+
+  #rating {
+    width: 22%;
   }
 }
 

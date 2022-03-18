@@ -17,19 +17,32 @@
 <body>
     <aside>
         <div class="container profile">
-            <img src="https://github.com/gutoo01.png" alt="guto">
-            <h1>Gustavo Trindade</h1>
-            <p>Web developer Jr</p>
+            <img src="https://avatars.githubusercontent.com/u/35564120?v=4" alt="guto">
+            <h1 id="profileName"></h1>
+            <p id="objective"></p>
         </div>
 
         <div class="container bio">
-            <li><img src="assets\map-pin.svg" alt="">Endereço</li>
-            <li><img src="assets\briefcase.svg" alt="">Freelancer</li>
-            <li><img src="assets\github.svg" alt="">gutoo01</li>
-            <li><img src="assets\linkedin.svg" alt="">gustavo-trindade01</li>
-            <li><img src="assets\twitter.svg" alt="">GuTrindade01</li>
-            <li><img src="assets\globe.svg" alt="">gustavo-portfolio.netlify.app/</li>
-            <li><img src="assets\mail.svg" alt="">gu.trindadelive@gmail.com</li>
+            <img src="assets\map-pin.svg" alt="">
+            <li id="address" ></li>
+
+            <img src="assets\briefcase.svg" alt="">
+            <li id="occupation" ></li>
+
+            <img src="assets\github.svg" alt="">
+            <li id="nickName" ></li>
+
+            <img src="assets\linkedin.svg" alt="">
+            <li id="linkedIn" ></li>
+
+            <img src="assets\twitter.svg" alt="">
+            <li id="twitter" ></li>
+
+            <img src="assets\globe.svg" alt="">
+            <li id="page" ></li>
+
+            <img src="assets\mail.svg" alt="">
+            <li id="email" ></li>
         </div>
 
         <div class="container techs">
@@ -85,7 +98,7 @@
                     <br>
                     IGNITE
                 </li>
-
+                <br />
                 <li>
                     <h3>Estácio</h3>
                     05/2016 - 07/2021
@@ -103,31 +116,26 @@
 
         <div class="container projects">
             <h1>My Projects</h1>
-            <span>Ver Todos</span>
+            <span><a href="">Ver Todos</a></span>
         </div>
 
         <div class="container repos">
 
             <div id="nameRep">
-                <img src="./assets/folder.svg" alt="repo" />Repo
+                <img id="repoName" src="./assets/folder.svg" alt="repo">
+                <span></span>                    
             </div>
 
             <span id="space">
                 <div id="rating">
-                    <img class="git" src="./assets/star.svg" alt="star" />
-                    <span>
-                        1000
-                    </span>
+                    <img id="git-stars" src="./assets/star.svg" alt="star">
+                    <span>0</span>
 
-                    <img class="git" src="./assets/git-branch.svg" alt="git" />
-                    <span>
-                        1353
-                    </span>
+                    <img id="git-forks" src="./assets/git-branch.svg" alt="git" />
+                    <span>0</span>
                 </div>
 
-                <div id="language">
-                    Javascript
-                </div>
+                <div id="language"></div>
             </span>
         </div>
 
@@ -143,6 +151,7 @@
         </div>
     </main>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
