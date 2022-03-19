@@ -56,10 +56,7 @@ const getRepo = () => {
     return response.json()
   }).then(repo => {
     data = repo.slice()
-    console.log(data);   
-
-
-
+    // console.log(data);   
 
     userName = data[10].name
     stars = data[10].starsstargazers_count
