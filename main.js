@@ -11,14 +11,14 @@ const getData = () => {
   }).then(body => {
     console.log(body);
 
-    userName = body.name
-    objective = body.bio
-    address = body.location
-    nickname = body.login
-    likedin = body.blog
-    twitter = body.twitter_username
-    page = "gustavo-portfolio.netlify.app"
-    email = "gu.trindadelive@gmail.com"
+   const userName = body.name
+   const objective = body.bio
+   const address = body.location
+   const nickname = body.login
+   const likedin = body.blog
+   const twitter = body.twitter_username
+   const page = "gustavo-portfolio.netlify.app"
+   const email = "gu.trindadelive@gmail.com"
 
     
     e = document.querySelector('#profileName')

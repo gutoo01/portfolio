@@ -46,15 +46,21 @@ body {
 .bio {
   font-weight: 400;
   font-size: 1rem;
-  list-style: none;
+  word-break: break-word;
+  gap: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.bio li {
+.bio div {
   display: flex;
   align-items: center;
-
-  margin-bottom: 1.25rem;
   gap: 1.25rem;
+}
+
+.bio div span {
+  margin-bottom: -4px;
 }
 
 .techs {
@@ -225,8 +231,12 @@ a:hover {
     margin-left: 0;
   }
 
-  .projects span {
-    font-size: 1.0rem;
+  .projects h1 {
+    font-size: 1rem;
+  }
+
+  .projects span a {
+    font-size: 0.7rem;
   }
 
   .repos #rating {
@@ -282,8 +292,12 @@ a:hover {
     margin-left: 0;
   }
 
-  .projects span {
-    font-size: 1.0rem;
+  .projects h1 {
+    font-size: 1.2rem;
+  }
+
+  .projects span a {
+    font-size: 1rem;
   }
 
   #rating {
@@ -291,7 +305,7 @@ a:hover {
   }
 
   #language {
-    width: 28%; 
+    width: 28%;
   }
 
   .description {
@@ -343,8 +357,12 @@ a:hover {
     margin-left: 0;
   }
 
-  .projects span {
+  .projects h1 {
     font-size: 1.5rem;
+  }
+
+  .projects span a {
+    font-size: 1rem;
   }
 
   .repos #rating {
@@ -395,6 +413,14 @@ a:hover {
   .ed ul {
     margin-top: 1.25rem;
     margin-left: 0;
+  }
+
+  .projects h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects span a {
+    font-size: 1rem;
   }
 
   #rating {
