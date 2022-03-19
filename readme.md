@@ -2,11 +2,21 @@
 
 ## In this application I show some lessons learned in:
 
-- JS
-- CSS
-- HTML
+[x] HTML
+[x] CSS
+[x] JS
 
 ## Using deployment technique with:
 
-- Netlify
-- Git
+[x] Git
+[x] Netlify
+
+## The project will be refactored to support the techs:
+
+[] accessibility
+[] typescript
+[] node features
+[] nextjs
+[] css animations
+[] sass
+[] TDD

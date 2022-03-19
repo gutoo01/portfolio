@@ -6,10 +6,10 @@
  */
 
 const getData = () => {
+  // '//' elimina o uso de 'http' ou 'https'
   fetch(`//api.github.com/users/gutoo01`).then(response => {
     return response.json()
   }).then(body => {
-    console.log(body);
 
   userName = body.name
   objective = body.bio
@@ -55,13 +55,16 @@ const getRepo = () => {
   fetch(`//api.github.com/users/gutoo01/repos`).then(response => {
     return response.json()
   }).then(repo => {
-    data = repo.slice(0,12)
-    // console.log(data);
+    data = repo.slice()
+    console.log(data);   
 
-    userName = data[11].name
-    stars = data[11].stargazers_count
-    forkers = data[11].forks
-    codeLang = data[11].language
+
+
+
+    userName = data[10].name
+    stars = data[10].starsstargazers_count
+    forkers = data[10].forks
+    codeLang = data[10].language
 
     e = document.querySelector('#nameRep span')
     e.innerHTML = userName
