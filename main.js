@@ -6,7 +6,7 @@
  */
 
 const getData = () => {
-  fetch(`https://api.github.com/users/gutoo01`).then(response => {
+  fetch(`//api.github.com/users/gutoo01`).then(response => {
     return response.json()
   }).then(body => {
     console.log(body);
@@ -52,7 +52,7 @@ const getData = () => {
 getData()
 
 const getRepo = () => {
-  fetch(`https://api.github.com/users/gutoo01/repos`).then(response => {
+  fetch(`//api.github.com/users/gutoo01/repos`).then(response => {
     return response.json()
   }).then(repo => {
     data = repo.slice(0,12)
