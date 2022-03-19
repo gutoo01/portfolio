@@ -6,7 +6,7 @@
  */
 
 const getData = () => {
-  async fetch(`http://api.github.com/users/gutoo01`).then(response => {
+  fetch(`http://api.github.com/users/gutoo01`).then(response => {
     return response.json()
   }).then(body => {
     console.log(body);
