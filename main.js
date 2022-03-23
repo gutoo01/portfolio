@@ -7,7 +7,7 @@
 
 const getData = () => {
   // '//' elimina o uso de 'http' ou 'https'
-  fetch(`//api.github.com/users/gutoo01`).then(response => {
+  fetch(`https//api.github.com/users/gutoo01`).then(response => {
     return response.json()
   }).then(body => {
 
@@ -52,11 +52,14 @@ const getData = () => {
 getData()
 
 const getRepo = () => {
-  fetch(`//api.github.com/users/gutoo01/repos`).then(response => {
+  fetch(`https//api.github.com/users/gutoo01/repos`).then(response => {
     return response.json()
   }).then(repo => {
     data = repo.slice()
-    // console.log(data);   
+    // console.log(data); 
+
+    // i =  Math.floor(data.length)
+    console.log(i);
 
     userName = data[10].name
     star = data[10].stargazers_count
