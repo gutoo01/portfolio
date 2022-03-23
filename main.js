@@ -7,26 +7,26 @@
 
 const getData = () => {
   // '//' elimina o uso de 'http' ou 'https'
-  fetch(`https//api.github.com/users/gutoo01`).then(response => {
+  fetch("./apistatic/gutoo01.json").then(response => {
     return response.json()
   }).then(body => {
 
-  userName = body.name
-  objective = body.bio
-  address = body.location
-  // nickname = body.login
-  // likedin = body.blog
-  twitter = body.twitter_username
-  // page = "gustavo-portfolio.netlify.app"
-  email = "gu.trindadelive@gmail.com"
+    userName = body.name
+    objective = body.bio
+    address = body.location
+    // nickname = body.login
+    // likedin = body.blog
+    twitter = body.twitter_username
+    // page = "gustavo-portfolio.netlify.app"
+    email = "gu.trindadelive@gmail.com"
 
-    
+
     e = document.querySelector('#profileName')
     e.innerHTML = userName
-    
+
     e = document.querySelector('#objective')
     e.innerHTML = objective
-    
+
     e = document.querySelector('#address')
     e.innerHTML = address
 
@@ -52,14 +52,14 @@ const getData = () => {
 getData()
 
 const getRepo = () => {
-  fetch(`https//api.github.com/users/gutoo01/repos`).then(response => {
+  fetch("./apistatic/repos.json").then(response => {
     return response.json()
   }).then(repo => {
     data = repo.slice()
-    // console.log(data); 
+    // console.log(data);
 
-    // i =  Math.floor(data.length)
-    console.log(i);
+    i = Object.keys(data).length
+    
 
     userName = data[10].name
     star = data[10].stargazers_count
@@ -77,7 +77,7 @@ const getRepo = () => {
 
     e = document.querySelector('#language')
     e.innerHTML = codeLang
-    
+
   })
 }
 getRepo()
