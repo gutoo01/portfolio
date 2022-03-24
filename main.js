@@ -1,13 +1,17 @@
-/** end point
+/** end points
  *  https://api.github.com/users/gutoo01
  * 
  * repositórios endpoint
  * https://api.github.com/users/gutoo01/repos
  */
+const profile = "https://api.github.com/users/gutoo01";
+const rep = "https://api.github.com/users/gutoo01/repos";
+
 
 const getData = () => {
+
   // '//' elimina o uso de 'http' ou 'https'
-  fetch("./apistatic/gutoo01.json").then(response => {
+  fetch(profile).then(response => {
     return response.json()
   }).then(body => {
 
@@ -52,14 +56,14 @@ const getData = () => {
 getData()
 
 const getRepo = () => {
-  fetch("./apistatic/repos.json").then(response => {
+  fetch(rep).then(response => {
     return response.json()
   }).then(repo => {
     data = repo.slice()
     // console.log(data);
 
     i = Object.keys(data).length
-    
+
 
     userName = data[10].name
     star = data[10].stargazers_count
