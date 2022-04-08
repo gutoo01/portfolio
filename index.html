@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Trindade Dev</title>
-   
+    
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 
             <div>
                 <figure><img src="assets\briefcase.svg" alt=""></figure>
-                <span id="occupation"></span>
+                <span id="ocupation"></span>
             </div>
 
             <div>
@@ -47,17 +48,17 @@
 
             <div>
                 <figure><img src="assets\twitter.svg" alt=""></figure>
-                <a href="https://twitter.com/GuTrindade01"><span id="twitter"></span></a>
+                <a href="https://twitter.com/GuTrindade01"><span id="twitter">@GuTrindade01</span></a>
             </div>
 
             <div>
                 <figure><img src="assets\globe.svg" alt=""></figure>
-                <a href="https://gustavo-portfolio.netlify.app/"><span id="page">Portifólio digital</span></a>
+                <a href="https://gustavo-portfolio.netlify.app/"><span id="page">Portifólio</span></a>
             </div>
 
             <div>
                 <figure><img src="assets\mail.svg" alt=""></figure>
-                <span id="email"></span>
+                <a href="mailto:gu.trindadelive@gmail.com" id="email">Enviar email</a>
             </div>
         </div>
 
@@ -75,6 +76,18 @@
                 </div>
                 <div>
                     REACT
+                </div>
+                <div>
+                    TYPESCRIPT
+                </div>
+                <div>
+                    JAVA
+                </div>
+                <div>
+                    SPRING
+                </div>
+                <div>
+                    DOCKER
                 </div>
             </section>
         </div>
@@ -140,24 +153,24 @@
 
         <div class="container repos">
 
-            <div id="nameRep">
+            <div class="nameRep">
                 <figure>
                     <img id="repoName" src="./assets/folder.svg" alt="repo">
-                    <span></span>
+                    <span id="rep"></span>
                 </figure>
             </div>
 
             <span id="space">
                 <div id="rating">
                     <figure><img src="./assets/star.svg" alt="star">
-                        <span id="git-stars"></span>
+                        <span id="git_stars"></span>
 
                         <img src="./assets/git-branch.svg" alt="git">
-                        <span id="git-forks"></span>
+                        <span id="git_forks"></span>
                     </figure>
                 </div>
 
-                <div id="language"></div>
+                <div class="lang"><span id="language"></span></div>
             </span>
         </div>
 
@@ -175,7 +188,7 @@
         </div>
     </main>
 
-    <script src="main.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

@@ -150,7 +150,7 @@ a:hover {
   justify-content: space-between;
 }
 
-.repos #nameRep {
+.repos .nameRep {
   width: 14%;
 
   display: flex;
@@ -160,7 +160,7 @@ a:hover {
   margin-bottom: 5rem;
 }
 
-.repos #nameRep figure {
+.repos .nameRep figure {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -255,7 +255,7 @@ a:hover {
     width: 50%;
   }
 
-  .repos #language {
+  .repos .lang {
     width: 42%;
   }
 }
